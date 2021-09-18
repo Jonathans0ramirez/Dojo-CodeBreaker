@@ -1,0 +1,16 @@
+{
+  "name": "dojo-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest --verbose --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.2.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
