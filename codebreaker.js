@@ -1,19 +1,15 @@
 function run(a, b) {
-    var result = " ";
+    var result = "";
     for (var i = 0; i < 4; i++ ){
-        for (var j = 0; j < 4; j++){
-            if(i == j){
-                if (a.substring(i,j) == b.substring(i,j)){
-                    result = result + "x";
-                }
-            }
-            if(i != j){
-                if(b.includes(a.substring(i,j))){
+            if (a.substring(i, i+1) == b.substring(i, i+1)){
+                result = result + "x";
+            } else {
+                if(b.includes(a.substring(i, i+1))){
                     result = result + "-";
                 }
             }
-        }
-    }
+     }  
+                   
     return result
 }
 
